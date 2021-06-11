@@ -21,14 +21,14 @@ function App() {
       {/* Sidebar */}   
       <Sidebar />
       
-      <SidebarOption Icon={HomeIcon} text="Home" />
-      <SidebarOption Icon={ExploreIcon} text="Explore" />
-      <SidebarOption Icon={NotificationsIcon} text="Notifications" />
-      <SidebarOption Icon={MailOutlineIcon} text="Messages" />
-      <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
-      <SidebarOption Icon={ListAltIcon} text="Lists" />
-      <SidebarOption Icon={PermIdentitiyIcon} text="Profile" />
-      <SidebarOption Icon={MoreHorizIcon} text="More" /> 
+      <SidebarOption active={true} Icon={HomeIcon} text="Home" />
+      <SidebarOption active={false  } Icon={ExploreIcon} text="Explore" />
+      <SidebarOption active={false} Icon={NotificationsIcon} text="Notifications" />
+      <SidebarOption active={false} Icon={MailOutlineIcon} text="Messages" />
+      <SidebarOption active={false} Icon={BookmarkBorderIcon} text="Bookmarks" />
+      <SidebarOption active={false} Icon={ListAltIcon} text="Lists" />
+      <SidebarOption active={false} Icon={PermIdentitiyIcon} text="Profile" />
+      <SidebarOption active={false} Icon={MoreHorizIcon} text="More" /> 
 
       {/* Feed */}
       
