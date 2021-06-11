@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css';
 import { Sidebar } from './Sidebar';
 import { SidebarOption } from './SidebarOption';
+import HomeIcon from '@material-ui/icons/Home';
+import ExploreIcon from '@material-ui/icons/Explore';
+import NotificationsIcon from '@material-ui/icons/Notifications';
 
 function App() {
   return (
@@ -11,7 +14,10 @@ function App() {
 
       {/* Sidebar */}   
       <Sidebar />
-      <SidebarOption />
+      
+      <SidebarOption Icon={HomeIcon} text="Home" />
+      <SidebarOption Icon={ExploreIcon} text="Explore" />
+      <SidebarOption Icon={NotificationsIcon} text="Notifications" /> 
 
       {/* Feed */}
       
