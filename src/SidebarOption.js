@@ -9,4 +9,3 @@ export const SidebarOption = ({text, Icon}) => {
     </div>
   )
 }
-  
