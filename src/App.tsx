@@ -2,19 +2,15 @@ import React from 'react';
 import './App.css';
 import { Sidebar } from './Sidebar';
 import Feed from './Feed';
-import Widget from "./Widget";
+import Widgets from "./Widgets";
 
 function App() {
   return (
     //BEM
     <div className="app">
-      
       <Sidebar />
-      {/* Feed */}
       <Feed />
-      {/* Widgets */}
-      <Widget />
-
+      <Widgets />
     </div>
   );
 }
