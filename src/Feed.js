@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Feed.css";
+import { Postbox } from './Postbox';
 
 function Feed() {
   return (
@@ -8,7 +9,8 @@ function Feed() {
       <div className="feed_header">
         <h2>Home</h2>
       </div>
-      {/* Post Box */}  
+      {/* Post Box */}
+      <Postbox />
       
     </div>
   )
