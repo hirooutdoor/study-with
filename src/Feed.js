@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Feed.css";
 import { Postbox } from "./Postbox";
 import { Post } from "./Post";
+import db from './firebase';
 
 function Feed() {
+
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    db.collection('posts').onSnapshot(snapshot => (
+      setPosts(snapshot.docs.map(doc => doc.data()))
+    ))
+  }, [])
+
   return (
     <div className="feed">
       {/* Header */}
@@ -13,14 +23,17 @@ function Feed() {
       {/* Post Box */}
       <Postbox />
 
-      <Post
-        displayName="Armin Arlert"
-        verified={true}
-        username="arminarlert"
-        image="https://media.giphy.com/media/ywBC5Dsiu6gz7CWf4G/giphy.gif"
-        avatar="https://pbs.twimg.com/media/Ei3ftPrWkAASkc_.jpg"
-        text="Hey yooooooooooooooooooooooooO! "
-      />
+      {posts.map((post) => (
+        <Post
+        displayName={post.displayName}
+        verified={post.verified}
+        username={post.username}
+        image={post.image}
+        avatar={post.avatar}
+        text={post.text}
+        />
+      
+      ))}
       <Post />
       <Post />
       <Post />
