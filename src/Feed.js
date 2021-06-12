@@ -1,21 +1,26 @@
 import React from 'react'
+import "./Feed.css";
+import { Postbox } from './Postbox';
+import { Post } from './Post' ;
 
 function Feed() {
   return (
-    <div>
+    <div className="feed">
       {/* Header */}
-      <h2>Home</h2>
-
+      <div className="feed_header">
+        <h2>Home</h2>
+      </div>
       {/* Post Box */}
-
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
+      <Postbox />
+      
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
       
     </div>
   )

@@ -1,4 +1,13 @@
- body {
-   --app-color: #50b7f5;
-   --app-background: #e6ecf0;
- }
+body {
+  --app-color: #50b7f5;
+  --app-background: #e6ecf0;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
