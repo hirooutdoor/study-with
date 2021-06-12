@@ -18,7 +18,7 @@ export const Sidebar = () => {
   return (
     <div className="sidebar">
       {/* App Icon */}
-      <TwitterIcon />
+      <TwitterIcon className="sidebar_app_icon" />
 
       <SidebarOption active={true} Icon={HomeIcon} text="Home" />
       <SidebarOption active={false} Icon={ExploreIcon} text="Explore" />
