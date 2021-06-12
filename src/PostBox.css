@@ -1,9 +1,8 @@
 .postBox {
   padding-bottom: 10px;
-  border-bottom: 1px solid var(--app-background) ;
+  border-bottom: 1px solid var(--app-background);
   padding-right: 10px;
 }
-
 
 .postBox > form {
   display: flex;
@@ -20,5 +19,24 @@
   flex: 1;
   margin-left: 20px;
   font-size: 20px;
+  outline: none;
 }
 
+.postBox_imageInput {
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+.postBox_button {
+  background-color: var(--app-color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  width: 80px;
+  height: 40px !important;
+  margin-top: 20px !important;
+  margin-left: auto !important;
+}
