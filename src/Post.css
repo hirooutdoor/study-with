@@ -17,6 +17,7 @@
 .post__headerText > h3 {
   font-size: 15px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .post__headerUserId {
@@ -41,6 +42,7 @@
   margin-top: 10px;
 }
 
+
 .post__badge {
   font-size: 14px !important;
   color: var(--app-color);
@@ -48,4 +50,6 @@
 
 .post__avatar {
   padding: 10px;
+  cursor: pointer;
 }
+
