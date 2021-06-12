@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 import "./Feed.css";
-import { Postbox } from './Postbox';
-import { Post } from './Post' ;
+import { Postbox } from "./Postbox";
+import { Post } from "./Post";
 
 function Feed() {
   return (
@@ -12,7 +12,15 @@ function Feed() {
       </div>
       {/* Post Box */}
       <Postbox />
-      
+
+      <Post
+        displayName="Armin Arlert"
+        verified={true}
+        username="arminarlert"
+        image="https://media.giphy.com/media/ywBC5Dsiu6gz7CWf4G/giphy.gif"
+        avatar="https://pbs.twimg.com/media/Ei3ftPrWkAASkc_.jpg"
+        text="Hey yooooooooooooooooooooooooO! "
+      />
       <Post />
       <Post />
       <Post />
@@ -20,10 +28,8 @@ function Feed() {
       <Post />
       <Post />
       <Post />
-      <Post />
-      
     </div>
-  )
+  );
 }
 
-export default Feed
+export default Feed;
