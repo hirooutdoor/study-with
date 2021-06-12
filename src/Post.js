@@ -26,7 +26,7 @@ export const Post = ({
           <div className="post__headerText">
             <h3>
               Armin Arlert{" "}
-              <span>
+              <span className="post__headerUserId">
                 <VerifiedUser className="post__badge" /> @arminarlert
               </span>
             </h3>

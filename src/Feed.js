@@ -14,6 +14,13 @@ function Feed() {
       <Postbox />
       
       <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
       
     </div>
   )
