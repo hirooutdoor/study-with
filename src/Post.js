@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import { Avatar } from "@material-ui/core";
 import VerifiedUser from "@material-ui/icons/VerifiedUser";
@@ -19,29 +20,24 @@ export const Post = ({
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://pbs.twimg.com/media/Ei3ftPrWkAASkc_.jpg" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Armin Arlert{" "}
+              {displayName}{" "}
               <span className="post__headerUserId">
-                <VerifiedUser className="post__badge" /> @arminarlert
+                {verified && <VerifiedUser className="post__badge" />} @
+                {username}
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>
-              I challenge you to build a app like Twitter. This is it. Did you
-              find a groove?
-            </p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src="https://media.giphy.com/media/ywBC5Dsiu6gz7CWf4G/giphy.gif"
-          alt="post image"
-        />
+        <img src={image} alt="post image" />
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="sm" cursor="pointer" />
           <RepeatIcon fontSize="sm" cursor="pointer" />
