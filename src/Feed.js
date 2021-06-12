@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Feed.css";
 import { Postbox } from './Postbox';
+import { Post } from './Post' ;
 
 function Feed() {
   return (
@@ -11,6 +12,8 @@ function Feed() {
       </div>
       {/* Post Box */}
       <Postbox />
+      
+      <Post />
       
     </div>
   )
