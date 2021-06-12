@@ -8,13 +8,13 @@ function App() {
   return (
     //BEM
     <div className="app">
+      
       <Sidebar />
       {/* Feed */}
       <Feed />
-      
       {/* Widgets */}
       <Widget />
-      
+
     </div>
   );
 }

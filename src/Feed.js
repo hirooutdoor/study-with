@@ -8,17 +8,81 @@ function Feed() {
       <div className="feed_header">
         <h2>Home</h2>
       </div>
-
       {/* Post Box */}
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
 
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
       
     </div>
   )

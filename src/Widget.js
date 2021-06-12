@@ -2,7 +2,7 @@ import React from 'react'
 
 function Widget() {
   return (
-    <div>
+    <div className="widget">
       <h2>Widget</h2>
     </div>
   )
