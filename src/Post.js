@@ -43,10 +43,10 @@ export const Post = ({
           alt="post image"
         />
         <div className="post__footer">
-          <ChatBubbleOutlineIcon fontSize="sm" />
-          <RepeatIcon fontSize="sm" />
-          <FavoriteIcon fontSize="sm" />
-          <PublishIcon fontSize="sm" />
+          <ChatBubbleOutlineIcon fontSize="sm" cursor="pointer" />
+          <RepeatIcon fontSize="sm" cursor="pointer" />
+          <FavoriteIcon fontSize="sm" cursor="pointer" />
+          <PublishIcon fontSize="sm" cursor="pointer" />
         </div>
       </div>
     </div>
