@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from "react";
+import React, { forwardRef } from "react";
 import { Avatar } from "@material-ui/core";
 import VerifiedUser from "@material-ui/icons/VerifiedUser";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
@@ -9,16 +9,16 @@ import PublishIcon from "@material-ui/icons/Publish";
 
 import "./Post.css";
 
-export const Post = ({
+export const Post = forwardRef(({
   displayName,
   verified,
   image,
   avatar,
   username,
   text,
-}) => {
+}, ref) => {
   return (
-    <div className="post">
+    <div className="post" ref={ref}>
       <div className="post__avatar">
         <Avatar src={avatar} />
       </div>
@@ -47,4 +47,4 @@ export const Post = ({
       </div>
     </div>
   );
-};
+});
