@@ -3,6 +3,7 @@ import "./Feed.css";
 import { Postbox } from "./Postbox";
 import { Post } from "./Post";
 import db from './firebase';
+import FlipMove from "react-flip-move";
 
 function Feed() {
 
@@ -23,24 +24,20 @@ function Feed() {
       {/* Post Box */}
       <Postbox />
 
-      {posts.map((post) => (
-        <Post
-        displayName={post.displayName}
-        verified={post.verified}
-        username={post.username}
-        image={post.image}
-        avatar={post.avatar}
-        text={post.text}
-        />
-      
-      ))}
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      <FlipMove>
+        {posts.map((post) => (
+          <Post
+          key={post.text}
+          displayName={post.displayName}
+          verified={post.verified}
+          username={post.username}
+          image={post.image}
+          avatar={post.avatar}
+          text={post.text}
+          />       
+        ))}
+      </FlipMove>
+
     </div>
   );
 }
